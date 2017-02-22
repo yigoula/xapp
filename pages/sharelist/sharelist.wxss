@@ -1,0 +1,126 @@
+.shareList_background {
+    width: 100%;
+    color: #999;
+    background: #f4f4f4;
+}
+.shareList {
+    font-size: 14px;
+    padding-left: 8px;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    box-shadow: 0 1px 1px #e4e3e3;
+    font-family: 微软雅黑;
+}
+
+.sharePeopleCount_color {
+    color: #f60;   
+}
+
+.shareCount_color {
+    color: #f60;
+}
+
+.userinfo_avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    margin: 2px 0 0 1px;
+}
+
+.share_items {
+    border-left: 1px solid #e7e7e7;
+    margin-left: 35px;
+    padding-bottom: 15px;
+    padding-top: 2px;
+}
+
+.share_item {  
+    font-family: 微软雅黑;
+    justify-content: space-around;
+    display:flex;
+    flex-direction: row;
+    background: #f4f4f4;
+    padding: 5px 0px 5px 0px;
+}
+
+.share_useravatar {
+    margin-left: -35px;
+    float: left;
+    color: #999;
+}
+
+.share_item_1 {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    position: relative;
+    background: #fff;
+    width: 95%;
+}
+
+.share_item_title {
+	padding: 0px 0px 5px 0px;
+    font-size: 14px;
+}
+
+.share_item_time {
+	padding: 0px 0px 5px 0px;
+}
+
+.share_item_text {
+	padding: 0px 0px 5px 0px;
+    font-size: 14px;
+}
+
+.share_item_1_color {
+    color:#2Af;
+}
+
+.share_item_pic {    
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.share_item_pic_box {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 2px #e4e4e4;
+    background: #e4e4e4;
+    text-align: center;
+    padding: 5 5;
+}
+
+.share_text_lines {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.share_pic {
+	padding: 0px 5px 5px 0px;
+	width:55px;
+	height:82px;
+}
+
+.share_text_more_row {
+	width: 100%;
+    height: 1.25rem;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: -0.5rem;
+}
+.share_text_more_arrow {
+	content: "";
+    width: 0.35rem;
+    height: 0.35rem;
+    display: inline-block;
+    margin-top: 0.1rem;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    -webkit-transform: rotate(-45deg) translateY(0px);
+    transform: rotate(-45deg) translateY(0px);
+}

@@ -1,0 +1,28 @@
+<view class="shareList_background shareList">
+    已有 <text class="shareCount_color">{{totalShareCount}}</text> 个幸运者晒单， <text class="shareCount_color">{{totalCommentCount}}</text> 条评论！
+</view>
+<view class="share_items">
+    <view wx:for="{{shareList}}" wx:key="id" class="share_item">
+        <view class="share_useravatar"><image class="userinfo_avatar" src="{{item.avatarUrl}}"></image></view>
+        <view class="share_item_1">
+            <view class="share_item_title">
+                <text class="share_item_1_color">{{item.userName}}:</text>
+                <text class="">{{item.shareTitle}}</text>
+            </view>
+            <view class="share_item_time">
+                <text class="">第{{item.shareBatchNum}}期晒单 {{item.shareTime}}</text>
+            </view>
+            <view class="share_item_text">
+                <text class="share_text_lines">{{item.shareText}}</text>
+            </view>
+            <view>
+                <scroll-view scroll-x="true" class="" style="width: 100%">
+                    <block class="" wx:for="{{item.pictures}}">
+                        <image class="share_pic" src="{{item}}"/>
+                    </block>
+                </scroll-view>
+             </view>
+		</view>
+        <view class="share_text_more_arrow"></view>
+    </view>
+</view>

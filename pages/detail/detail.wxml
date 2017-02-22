@@ -1,0 +1,78 @@
+<!--<view style="text-align:center">{{title}} </view>-->
+<view>
+    <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_qs_box" wx:for="{{hotList}}">
+        {{item.title}}
+      </view>
+    </scroll-view>
+</view>
+<view>
+    <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_pic_box" wx:for="{{imgUrls}}">
+        <image src="{{item}}" style="width:97%"/>
+      </view>
+    </scroll-view>
+</view>
+<view>
+    <view class="good_title"><text>{{title}}</text></view>
+    <view class="good_price"><text>价值：￥46.00</text></view>
+    <view class="good_progress"><progress percent="88" color="#f60" active="true" /></view>
+</view>
+<view class="good_people_li_number">
+    <view class="good_people_li_bar01_em good_people_li_bar01_em_color">4928</view>
+    <view class="good_people_li_bar02_em good_people_li_bar02_em_color">5600</view>
+    <view class="good_people_li_bar03_em good_people_li_bar03_em_color">672</view>
+</view>
+<view class="good_people_li_text">
+    <view class="good_people_li_bar01_em">已参与</view>
+    <view class="good_people_li_bar02_em">总需人次</view>
+    <view class="good_people_li_bar03_em">剩余</view>
+</view>
+<navigator url="../sharelist/sharelist?productid=1"> <!--productid={{current productid}}-->
+    <view class="good_shaidan">
+        <view class="good_shaidan_text">
+            已有<text class="good_people_li_bar01_em_color">10</text>个幸运者晒单<text class="good_people_li_bar01_em_color common_padding">1000</text>条评论
+        </view>
+        <view class="good_shaidan_arrow">
+            <view class="navigator_arrow"></view>
+        </view>
+    </view>
+</navigator>
+<navigator url="../gooddesc/gooddesc?productid=1">
+	<view class="good_shaidan">
+		<view class="good_shaidan_text">
+			图文详情<text class="good_picturetextdetail_color">（建议建议WIFI下使用）</text>
+		</view>
+		<view class="good_shaidan_arrow">
+			<view class="navigator_arrow"></view>
+		</view>
+	</view>
+</navigator>
+<view class="good_shaidan">
+    <view class="good_shaidan_text">
+        所有夺宝记录
+    </view>
+    <view class="good_shaidan_arrow">
+        <view class="navigator_arrowdown"></view>
+    </view>
+</view>
+<view wx:for="{{buyerList}}" wx:key="id" class="">
+    <view class="userinfo">
+        <image class="userinfo_avatar" src="{{item.avatarUrl}}"></image>
+        <view>
+            <view>
+                <text class="userinfo_username">{{item.userName}}</text>
+                <text class="userinfo_address"> ({{item.province}}{{item.city}},{{item.ip}})</text>
+            </view>
+            <view class="userinfo_buytimes">
+                参与了<text class="userinfo_buytimes_color">{{item.buyTimes}}</text>人次
+                <text class="userinfo_buytime"> {{item.buyTime}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="good_detail_foot">
+    <button class="good_shopping_button buy_color" type="normal" bindtap="default" hover-class="other-button-hover">立即夺宝</button>
+    <button class="good_shopping_button cart_color" type="normal" bindtap="default" hover-class="other-button-hover">加入购物车</button>
+    <em class="cart_number">3</em>
+</view>
