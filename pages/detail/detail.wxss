@@ -275,3 +275,13 @@
     color: #fff;
     text-align: center;
 }
+
+.cart_icon {
+    margin: 8px 5px 5px 5px;
+	display: block;
+    float: left;
+    width: 28px;
+    height: 24px;
+    background: url(../../image/f_set.png) 0px -128px no-repeat;
+    background-size: 28px auto;	
+}

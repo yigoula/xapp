@@ -1,3 +1,5 @@
+var app = getApp()
+
 Page({
   data: {
     imgUrls: [
@@ -88,12 +90,21 @@ Page({
         buyTimes: 1,
         buyTime: '2016-03-26 09:38:07.565000'
       }
-    ]
+    ],
+	cartCountText: 0,
   },
   onLoad: function(options) {
       console.log("进入detail页面")
     this.setData({
       title: options.title
     })
-  }
+  },
+  addToCart: function(e) {
+    app.addCart()
+	var appCartCount = app.cartCount
+	console.log(appCartCount)
+	this.setData({
+		cartCountText: appCartCount
+	})
+  },
 })

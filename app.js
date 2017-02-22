@@ -26,5 +26,11 @@ App({
     globalData:{
       myname:null,
       shoppinglist:[]
-    }
+    },
+	cartCount: 0,
+	addCart:function() {
+		console.log("购物车+1")
+        var that = this
+		that.cartCount++
+	}
 })

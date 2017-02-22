@@ -73,6 +73,7 @@
 </view>
 <view class="good_detail_foot">
     <button class="good_shopping_button buy_color" type="normal" bindtap="default" hover-class="other-button-hover">立即夺宝</button>
-    <button class="good_shopping_button cart_color" type="normal" bindtap="default" hover-class="other-button-hover">加入购物车</button>
-    <em class="cart_number">3</em>
+    <button class="good_shopping_button cart_color" type="normal" bindtap="addToCart" hover-class="other-button-hover">加入购物车</button>
+	<image class="cart_icon"></image>
+    <text wx:if="{{cartCountText > 0}}" class="cart_number">{{cartCountText}}</text>
 </view>
