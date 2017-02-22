@@ -2,7 +2,7 @@
   <view class="shoppinglist">
     <view class="shoppinglist-ul">
       <view wx:for="{{mylist.shoppinglist}}" wx:key="id" class="shoppinglist-li">
-        <navigator url="../detail/detail?title={{item.name}}">
+        <navigator url="../detail/detail?title={{item.name}}&oldqs=">
             <view>
                 <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="" src="{{item.picurl}}"></image>
             </view>

@@ -285,3 +285,12 @@
     background: url(../../image/f_set.png) 0px -128px no-repeat;
     background-size: 28px auto;	
 }
+
+.pResultInfo {
+	box-shadow: 1px 1px 1px #eee inset;
+    margin: 20px 8px;
+	clear: both;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}

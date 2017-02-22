@@ -15,30 +15,37 @@ Page({
     duration: 0,
     hotList: [
       {
+		  id: 1,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/66095091304715.jpg',
         title: '第7期',
         desc: '22W人去過'
       }, {
+		  id: 2,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/41271202304715.jpg',
         title: '第6期',
         desc: '22W人去過'
       }, {
+		  id: 3,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/31414612304715.jpg',
         title: '第5期',
         desc: '22W人去過'
       }, {
+		  id: 4,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/63552304304715.jpg',
         title: '第4期',
         desc: '22W人去過'
       }, {
+		  id: 5,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/13827375304715.jpg',
         title: '第3期',
         desc: '22W人去過'
       }, {
+		  id: 6,
         pic: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
         title: '第2期',
         desc: '22W人去過'
       }, {
+		  id: 7,
         pic: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
         title: '第1期',
         desc: '22W人去過'
@@ -96,7 +103,8 @@ Page({
   onLoad: function(options) {
       console.log("进入detail页面")
     this.setData({
-      title: options.title
+      title: options.title,
+	  oldqs: options.oldqs
     })
   },
   addToCart: function(e) {
