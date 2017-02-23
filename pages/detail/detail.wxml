@@ -80,6 +80,8 @@
     <button wx:if="{{oldqs <= 0}}" class="good_shopping_button buy_color" type="normal" bindtap="default" hover-class="other-button-hover">立即夺宝</button>
     <button wx:if="{{oldqs <= 0}}" class="good_shopping_button cart_color" type="normal" bindtap="addToCart" hover-class="other-button-hover">加入购物车</button>
 	<button wx:if="{{oldqs > 0}}" class="good_shopping_button buy_color" type="normal" bindtap="" hover-class="other-button-hover" style="width: 100%">第48期(正在进行中……)</button>
-	<image class="cart_icon"></image>
-    <text wx:if="{{cartCountText > 0}}" class="cart_number">{{cartCountText}}</text>
+	<navigator url="../cart/cart">
+		<image class="cart_icon"></image>
+		<text wx:if="{{cartCountText > 0}}" class="cart_number">{{cartCountText}}</text>
+	</navigator>
 </view>

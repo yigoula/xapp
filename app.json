@@ -4,7 +4,8 @@
       "pages/detail/detail",
       "pages/sharelist/sharelist",
       "pages/share/share",
-	  "pages/gooddesc/gooddesc"
+	  "pages/gooddesc/gooddesc",
+    "pages/cart/cart"
     ],
     "window": {
       "navigationBarTextStyle": "black",
