@@ -18,37 +18,37 @@ Page({
 		  id: 1,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/66095091304715.jpg',
         title: '第7期',
-        desc: '22W人去過'
+        desc: ''
       }, {
 		  id: 2,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/41271202304715.jpg',
         title: '第6期',
-        desc: '22W人去過'
+        desc: ''
       }, {
 		  id: 3,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/31414612304715.jpg',
         title: '第5期',
-        desc: '22W人去過'
+        desc: ''
       }, {
 		  id: 4,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/63552304304715.jpg',
         title: '第4期',
-        desc: '22W人去過'
+        desc: ''
       }, {
 		  id: 5,
         pic: 'http://m.yigoula.com/statics/uploads/shopimg/20151205/13827375304715.jpg',
         title: '第3期',
-        desc: '22W人去過'
+        desc: ''
       }, {
 		  id: 6,
         pic: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
         title: '第2期',
-        desc: '22W人去過'
+        desc: ''
       }, {
 		  id: 7,
         pic: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
         title: '第1期',
-        desc: '22W人去過'
+        desc: ''
       }
     ],
     buyerList:[
@@ -99,6 +99,17 @@ Page({
       }
     ],
 	cartCountText: 0,
+	/*揭晓信息*/
+	resultInfo: {
+		userid: 101,
+		username: "郑钱",
+		useravatar: "http://m.yigoula.com/statics/uploads/photo/member.jpg", /*用户头像*/
+		totalbuytimes: 2,
+		opentime: "2016-03-10 17:16:58.970",
+		buytime: "2016-03-10 16:52:59.932",
+		luckynumber: 10000009,
+		item: 324 /*应该是历史开过的记录id*/
+	}
   },
   onLoad: function(options) {
       console.log("进入detail页面")

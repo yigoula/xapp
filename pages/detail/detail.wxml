@@ -8,8 +8,37 @@
       </view>
     </scroll-view>
 </view>
-<view wx:if="{{oldqs > 0}}" class="pResultInfo">
-{{oldqs}}
+<view wx:if="{{oldqs > 0}}" class="pResultMain">
+	<view class="pResultInfo">
+		<view class="pResultsL">
+			<view class="pResultL_avatar_1">
+				<image class="pResultsL_avatar" src="{{resultInfo.useravatar}}"></image>
+				<text class="pResultsL_userName">{{resultInfo.username}}</text>
+			</view>
+			<view class="pResultsL_preIcon"> </view>
+		</view>
+		<view class="pResultsR">
+			<view class="pResultsR_1">
+				<view class="pResultsR_info">
+					<view class="pResultsR_firstTextTop" style="white-space: nowrap;">总共购买</view>
+					<view class="orange">{{resultInfo.totalbuytimes}}</view>
+					<view>人次</view>
+				</view>
+				<view class="pResultsR_info">
+					<view class="pResultsR_firstTextTop">揭晓时间</view>
+					<view>{{resultInfo.opentime}}</view>
+				</view>
+				<view class="pResultsR_info">
+					<view class="pResultsR_firstTextTop">购买时间</view>
+					<view>{{resultInfo.buytime}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view>
+		<view class="luckyText">幸运码：<text class="orange">{{resultInfo.luckynumber}}</text>
+		<button class="btn_ViewCalcResult" type="normal" bindtap="" hover-class="other-button-hover">查看计算结果</button></view>
+	</view>
 </view>
 <view>
     <scroll-view class="recommend_scroll_x_box" scroll-x="true">
@@ -21,14 +50,19 @@
 <view>
     <view class="good_title"><text>{{title}}</text></view>
     <view class="good_price"><text>价值：￥46.00</text></view>
-    <view class="good_progress"><progress percent="88" color="#f60" active="true" /></view>
+	<view wx:if="{{oldqs > 0}}" class="pClosed">
+	本期已揭晓
+	</view>
+	<view wx:else>
+		<view class="good_progress"><progress percent="88" color="#f60" active="true" /></view>
+	</view>
 </view>
-<view class="good_people_li_number">
+<view wx:if="{{oldqs <= 0}}" class="good_people_li_number">
     <view class="good_people_li_bar01_em good_people_li_bar01_em_color">4928</view>
     <view class="good_people_li_bar02_em good_people_li_bar02_em_color">5600</view>
     <view class="good_people_li_bar03_em good_people_li_bar03_em_color">672</view>
 </view>
-<view class="good_people_li_text">
+<view wx:if="{{oldqs <= 0}}" class="good_people_li_text">
     <view class="good_people_li_bar01_em">已参与</view>
     <view class="good_people_li_bar02_em">总需人次</view>
     <view class="good_people_li_bar03_em">剩余</view>
