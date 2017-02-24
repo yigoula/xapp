@@ -6,9 +6,10 @@
             <view>
                 <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="" src="{{item.picurl}}"></image>
             </view>
-            <view>
+            <view class="good_title">
               {{item.name}}
             </view>
+			<view class="good_progress"><progress percent="18" color="#f60" /></view>
           </navigator>
       </view>
     </view>

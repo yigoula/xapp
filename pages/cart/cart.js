@@ -39,7 +39,7 @@ Page({
 		},
 		{
 			cid:1067,
-			title:"(第2期)iPhone 6 Plus A1524 16G版 4G手机粉色",
+			title:"(第2期)iPhone 6 Plus A1524 16G版 4G手机粉色 MJ3Y2CHAMJ3Y2CHA",
 			image:"http://m.yigoula.com/statics/uploads/shopimg/20151205/19258037305370.jpg",
 			num:"1",
 			price:"1.0",
