@@ -8,9 +8,9 @@
 	  "pages/cart/cart"
     ],
     "window": {
-      "navigationBarTextStyle": "black",
-      "navigationBarTitleText": "yyyg",
-      "navigationBarBackgroundColor": "#F8F8F8",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "一元云购",
+      "navigationBarBackgroundColor": "#ff6600",
       "backgroundColor": "#F8F8F8"
     },
     "tabBar": {

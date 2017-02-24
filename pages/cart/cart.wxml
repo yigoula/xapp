@@ -1,0 +1,27 @@
+<view wx:for="{{carts}}" wx:key="cid" class="cart_item">
+	<view class="cart_item_main">
+		<image src="{{item.image}}" class="cart_item_image"></image>
+		<view>
+			<view class="cart_item_text">{{item.title}}</view>
+			<view class="cart_item_text">剩余 {{item.remainNum}} 人次</view>
+			<view>
+				<text class="cart_item_text">总共参与: {{item.num}} 人次/</text><text class="cart_item_text cart_item_price_color">￥{{item.price}}</text>
+			</view>
+			<!--购物车加减控件-->
+			<view class="cart_operation_nowrap" style="padding-left: 10px;">
+				<view class="cart_operation_nowrap" style="width:60%">
+					<text class="cart_Operation cart_Minus cart_MinusPlus">-</text>
+					<input value="{{item.num}}" maxlength="7" type="number" class="cart_amount" />
+					<text class="cart_Operation cart_Plus cart_MinusPlus">+</text>
+				</view>
+				<view style="width:40%"><text class="cart_del"></text></view>
+			</view>
+		</view>
+	</view>
+	<view class="cart_foot">
+		<view style="width:70%" class="cart_summary">总共购买{{carts.lenght}}个商品 合计金额: <text class="cart_totalmoney"></text>元</view>
+		<view style="width:30%">
+			<button class="cart_goto_pay" type="normal" bindtap="default" hover-class="other-button-hover">去结算</button>
+		</view>
+	</view>
+</view>

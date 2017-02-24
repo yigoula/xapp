@@ -117,6 +117,14 @@ Page({
       title: options.title,
 	  oldqs: options.oldqs
     })
+	
+	//历史数据展示时，修改标题文字
+	if (options.oldqs > 0)
+	{
+		wx.setNavigationBarTitle({
+		  title: '揭晓结果'
+		})
+	}
   },
   addToCart: function(e) {
     app.addCart()
@@ -125,5 +133,5 @@ Page({
 	this.setData({
 		cartCountText: appCartCount
 	})
-  },
+  }
 })

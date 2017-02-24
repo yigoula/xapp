@@ -1,0 +1,135 @@
+.cart_item {
+	border-bottom: 1px solid #dcdcdc;
+    padding: 6px 0;
+}
+
+.cart_item_main {
+	display:flex;
+    flex-direction: row;
+}
+
+.cart_item_image {
+	width: 80px;
+	height: 80px;
+}
+
+.cart_item_text {
+	color: #666;
+    height: 16px;
+    line-height: 18px;
+    overflow: hidden;
+	font-size: 12px;
+	font-family: 微软雅黑;
+	padding-left: 10px;
+}
+
+.cart_item_price_color {
+	color: #f60;
+}
+
+.cart_Operation {
+	background: #fff;
+    border: 1px solid #ccc;
+}
+
+.cart_Minus {
+	font-size: 16px;
+    line-height: 25px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+	
+	font-family: 微软雅黑;
+}
+
+.cart_MinusPlus {
+	width: 28px;
+    height: 28px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+}
+
+.cart_amount {
+    color: #666;
+    font-family: 微软雅黑;
+    line-height: 16px;
+    font-size: 16px;
+    width: 58px;
+    border: 1px solid #BBB;
+    text-align: center;
+    height: 28px;
+}
+
+.cart_Plus {
+    line-height: 28px;
+    font-size: 20px;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cart_del {
+	background: url(../../image/setIcon.png);
+    background-size: 80px auto;
+	
+	width: 28px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-position: -51px -59px;
+	
+	float: right;
+	margin-right: 10px;
+}
+
+.cart_operation_nowrap {
+	display:flex;
+    flex-direction: row;
+}
+
+.cart_foot {
+    position: fixed;
+    bottom: 0rpx;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+    padding: 8px 0px 8px 0px;
+    border-top: 1px solid #dcdcdc;
+    left: 0px;
+    display:flex;
+    flex-direction: row;
+	
+	font-size: 12px;
+}
+
+.cart_totalmoney{
+	color: #f60;
+	font-family: 微软雅黑;
+}
+
+.cart_goto_pay {
+	background: #f60;
+	float: right;
+	font-family: 微软雅黑;
+	
+	display: block;
+    height: 35px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.cart_summary {
+	font-size: 13px;
+	font-family: 微软雅黑;
+	margin: 10px;
+}
